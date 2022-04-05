@@ -1,0 +1,20 @@
+
+ TDD : Test Driven Development
+         Testler hazırlanır, sonra sistemi bu testlere göre test ederiz.
+
+ BDD : Behavor Driven Development
+          Text metin ile yapılacak test stepleri belirlenir.
+          Bu Gherkin dilinde yazılır.
+          filename.feature dosyalara yazılır
+
+          Gherkin --> Text metin
+          Feature
+          Scenario
+          Scenario OutLine
+          Background
+
+          Given --->   vermek, test başlama noktası
+          When  --->   olduğunda, test yapılır
+          Then  --->   beklenen sonuç
+          And   --->   ekleme
+          But   --->   negative test
