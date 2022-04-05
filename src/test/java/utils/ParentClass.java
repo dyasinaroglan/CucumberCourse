@@ -20,7 +20,7 @@ public class ParentClass {
         this.driver = Driver.getDriver();
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-        this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(10));
+        this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(20));
         PageFactory.initElements(driver,this);
     }
     public void openSite(String url){

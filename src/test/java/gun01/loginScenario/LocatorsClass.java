@@ -11,5 +11,5 @@ public interface LocatorsClass {
     By orderReference = By.id("id_order");
     By lMessage = By.id("message");
     By sendButton = By.xpath("(//i[@class='icon-chevron-right right'])[3]");
-    By yourMessage = By.cssSelector("p[class='alert alert-success']");
+    By yourMessage = By.cssSelector( "p[class='alert alert-success']");
 }

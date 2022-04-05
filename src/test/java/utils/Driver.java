@@ -41,7 +41,7 @@ public class Driver {
     }
     public static void quit() throws InterruptedException {
         if(driver != null)
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         driver.quit();
         driver = null;
     }

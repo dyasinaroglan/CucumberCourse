@@ -42,7 +42,8 @@ public class MyStepdefs extends ParentClass {
     }
 
     @And("click to send button")
-    public void clickToSendButton() {
+    public void clickToSendButton() throws InterruptedException {
+        sleepTo(2000);
         clickTo(sendButton);
     }
 
