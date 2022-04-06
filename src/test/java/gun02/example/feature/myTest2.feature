@@ -1,11 +1,12 @@
 Feature:
+
   Scenario Outline: SignIn testi
     Given websiteye git "http://automationpractice.com/index.php"
     And sıgnIN butonuna tıkla
     And "<Email>" girisi yap
     And create an account butonuna tıkla
-    And Title sec
-    And firstname "<firstname>" ve lastname "<lastname>" gir
+    * Title sec
+    * firstname "<firstname>" ve lastname "<lastname>" gir
     And password "<password>" gir
     When company "<company>" gir
     Then Adres "<Address>" gir

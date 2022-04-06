@@ -1,20 +1,25 @@
 
  TDD : Test Driven Development
-         Testler hazırlanır, sonra sistemi bu testlere göre test ederiz.
+         Testler hazırlanır, sonra sistemi bu testlere göre test ederiz. kod yazılmadan önce test senaryolarının belirlenmesi
+         ve bu senaryolara bağlı kalınarak kodun yazılması anlayışına dayanır.
+         her test senaryosu kendi içinde tekrarlanacağından kodlar arasındaki bağımlılık azalmakta. bu nedenle
+         yeni bir kod parçası eklendiğinde mevcut kodlarda bzoulma riski azalıyor.
 
  BDD : Behavor Driven Development
-          Text metin ile yapılacak test stepleri belirlenir.
+          Text metin ile yapılacak test stepleri belirlenir. en güzel yanı konuşma dilinde test senaryolarını yazmamızı sağlıyor.
           Bu Gherkin dilinde yazılır.
           filename.feature dosyalara yazılır
 
           Gherkin --> Text metin
-          Feature
-          Scenario
+          Feature ----> testi yapılacak özellğin adını belirtmektedir.
+          Scenario  ---> feature tanımı içerisinde uygulanacak senaryoların adını belirttiğimiz
           Scenario OutLine
           Background
 
-          Given --->   vermek, test başlama noktası
-          When  --->   olduğunda, test yapılır
-          Then  --->   beklenen sonuç
-          And   --->   ekleme
+          Given --->   vermek, test başlama noktası, sistemin başlangıç durumunu gösterir.
+          When  --->   olduğunda, test yapılır. bir olay aksiyonu tanımlamak için kullandığımız amahtar kelime
+          Then  --->   beklenen sonuç --when adımında gerçekleştirilen olay sonrası beklenen sonucu ya da durumu tanımlar
+          And   --->   ekleme  ---Bahsettiğimiz Given, When, Then anahtar kelimelerinden birden fazla kullanmak istediğimizde
+          bu anahtar kelimelerden faydalanıyoruz. And olumlu durumlarda, But olumsuz durumlarda kullanılmaktadır.
           But   --->   negative test
+          bunların hepsine annotation denir.(dipnot)
