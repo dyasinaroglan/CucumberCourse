@@ -52,4 +52,13 @@ public class LoginPO {
 
     @FindBy(css = "div[class='alert alert-success alert-dismissible']")
     public WebElement successMessage;
+
+    @FindBy(css = "div.alert.alert-success")  //girdiği zaman
+    public WebElement eAlertAccept;
+
+    @FindBy(css = "div.alert.alert-danger")  // girmediği zaman
+    public WebElement eAlertDanger;
+
+    @FindBy(xpath = "//aside[@id='column-right']//a[text()='Logout']")
+    public WebElement eLogoutSide;
 }
