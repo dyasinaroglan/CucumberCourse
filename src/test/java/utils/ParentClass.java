@@ -29,8 +29,14 @@ public class ParentClass {
     public void clickTo(By locator){
         wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
     }
+    public void clickTo(WebElement element){
+        wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+    }
     public void sendKeys(By locator, String text){
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).sendKeys(text);
+    }
+    public void sendKeysTo(WebElement element, String text){
+        wait.until(ExpectedConditions.visibilityOf(element)).sendKeys(text);
     }
     public void sleepTo(long milis) throws InterruptedException {
         Thread.sleep(milis);
