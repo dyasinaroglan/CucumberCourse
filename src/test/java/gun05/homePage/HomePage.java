@@ -17,4 +17,13 @@ public class HomePage extends ParentClass {
 
     @FindBy(xpath = "//a//h3")
     public WebElement titles;
+
+    @FindBy(id = "Email")
+    public WebElement emailInput;
+
+    @FindBy(css = "input[class='button-1 login-button']")
+    public WebElement logInButton;
+
+    @FindBy(css = "div[class='validation-summary-errors']")
+    public WebElement errorMessage;
 }
