@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
+import utils.Driver;
 import utils.ParentClass;
 
 import java.util.Locale;
@@ -25,8 +26,8 @@ public class GoogleSearchDataFormFeatureFile extends ParentClass {
     }
 
     @Then("user should see {string} results in Google")
-    public void userShouldSeeResultsInCucumber(String ınput) {
+    public void userShouldSeeResultsInCucumber(String ınput) throws InterruptedException {
         Assert.assertTrue(homePage.titles.getText().toLowerCase(Locale.ROOT).contains(ınput.toLowerCase(Locale.ROOT)));
-
+        Driver.quit();
     }
 }
